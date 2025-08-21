@@ -15,11 +15,13 @@ body {
   font-family: Barlow;
   color: #ffffff;
 }
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
 }
+
 header {
   text-align: center;
   display: flex;
@@ -27,11 +29,12 @@ header {
   justify-content: space-between;
   align-items: flex-end;
   background: url(https://as2.ftcdn.net/v2/jpg/10/16/89/81/1000_F_1016898169_9zk6TEVVSOtbQU5ZSyMGwiP2p77KDKLp.jpg);
-padding: 1.2rem;
+  padding: 1.2rem;
   font-size: 1rem;
   border-radius: 10px;
   border-top: var(--stroke) double var(--purple);
 }
+
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -40,11 +43,13 @@ nav ul {
   flex-flow: row wrap;
   align-items: center;
 }
+
 ul {
   list-style-type: none;
   display: center;
   justify-content: center;
 }
+
 nav a {
   display: block;
   color: var(--white);
@@ -54,16 +59,20 @@ nav a {
   font-weight: bold;
   text-shadow: 2px 2px 1px var(--black);
 }
+
 nav a:hover {
   color: var(--LightPurple);
 }
+
 h1 {
   font-family: Sancreek;
   text-shadow: 2px 2px 1px var(--pink);
 }
+
 h2 {
   text-shadow: 2px 2px 1px var(--pink);
 }
+
 .button {
   background-color: var(--purple);
   color: var(--white);
@@ -73,48 +82,78 @@ h2 {
   padding: 0.5rem 1.5rem;
   box-shadow: 0 3px var(--black);
 }
+
 .button:hover {
   background-color: var(--LightPurple);
   color: var(--black);
 }
+
 .button:active {
   background-color: var(--pink);
   transform: translateY(4px);
 }
+
+/* Updated card styling */
+.card {
+  text-align: center;
+}
+
+/* Updated image styling */
 img {
-  max-width: 150%;
+  max-width: 100%;
   border: 5px solid var(--purple);
   box-shadow: 2px 2px 2px var(--black);
+  display: block;
+  margin: 0 auto;
 }
+
 .resize {
   width: auto;
   height: 200px;
 }
+
 .ResizeCoffee {
   width: auto;
   height: 155px;
 }
+
 .ResizeJournal {
   width: auto;
   height: 155px;
 }
+
 .ResizeDesk {
   width: auto;
   height: 155px;
 }
+
+.card ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card li {
+  margin-bottom: 0.5rem;
+}
+
 .intro {
   margin-bottom: 4rem;
   text-align: center;
   font-size: 1.1rem;
 }
+
 main {
   margin-top: 3rem;
   text-align: center;
 }
+
 .grid {
   display: grid;
   gap: 4rem;
 }
+
 footer {
   background: url(https://as2.ftcdn.net/v2/jpg/10/16/89/81/1000_F_1016898169_9zk6TEVVSOtbQU5ZSyMGwiP2p77KDKLp.jpg);
   margin: 5rem 0;
@@ -124,28 +163,30 @@ footer {
   border-radius: 10px;
   border-bottom: var(--stroke) double var(--purple);
 }
+
 footer a {
   color: var(--white);
 }
+
 footer a:hover {
   text-decoration: none;
   color: var(--gray);
 }
+
 footer:active {
   background-color: var(--pink);
   transform: translateY(4px);
 }
+
 @media (min-width: 800px) {
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
   }
 }
+
 @media (max-width: 900px) {
   header {
     justify-content: center;
   }
 }
-/* @media (max-width: 500px) {
-  header {
-    justify-content: center; */
